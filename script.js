@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {//Evento que aguarda 
       document.getElementById('email').value = '';
     } else {
       mensagem.innerHTML = "<div class='alert alert-success' role='alert'><strong>" + email + "</strong> é um endereço de e-mail válido.</div>";
-      //document.getElementById('email').value = '';
+      document.getElementById('email').value = '';
 
       setTimeout(function() {//Cria um atraso de 5 segundos (5000 milissegundos) antes de submeter o formulário
         document.getElementById('formulario').submit();
